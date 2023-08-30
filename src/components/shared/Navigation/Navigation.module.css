@@ -1,0 +1,87 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoutButton {
+    background: none;
+    cursor: pointer;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0077ff;
+    margin: 0 20px;
+    margin-right: 10px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+} 
+.box{
+    position: absolute;
+    background-color:rgba(0, 0, 255, 0.4);
+    width: 300px;
+    right: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+.abc:hover .box{
+    display: block;
+}
+.box{
+    display: none;
+}
+.box h3{
+    color: #fff;
+}
+.box button {
+    font-size: 15px;
+    background: none;
+    padding: 2px;
+}
+.box button:hover
+{
+    border-radius:10px;
+    padding: 10px 18px;
+}
+.abc .box button img{
+    width: 20px;
+}
+.abc div img{
+    width: 120px;
+
+
+}
+.logout{
+    display: none;
+}
+@media screen and (max-width: 600px){
+.logoText{
+    display: none;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+}
+.logoutButton{
+    display: none;
+}
+.user{
+    display: none;
+}
+.abc:hover .logout{
+    display: block;
+    color: #fff;
+}
+}
